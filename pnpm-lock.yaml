@@ -36,15 +36,27 @@ importers:
         specifier: workspace:*
         version: link:packages/uma
     devDependencies:
+      '@barelyhuman/prettier-config':
+        specifier: ^2.0.2
+        version: 2.0.2
       '@preact/preset-vite':
         specifier: ^2.10.1
         version: 2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
       '@tailwindcss/vite':
         specifier: ^4.0.9
         version: 4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
+      nano-staged:
+        specifier: ^0.8.0
+        version: 0.8.0
       nodemon:
         specifier: ^3.1.9
         version: 3.1.9
+      prettier:
+        specifier: ^3.5.2
+        version: 3.5.2
       tailwindcss:
         specifier: ^4.0.9
         version: 4.0.9
@@ -173,6 +185,10 @@ packages:
   '@babel/types@7.26.9':
     resolution: {integrity: sha512-Y3IR1cRnOxOCDvMmNiym7XpXQ93iGDDPHx+Zj+NM+rg0fBaShfQLkg+hKPaZCEvg5N/LeCo4+Rj/i3FuJsIQaw==, tarball: https://registry.npmjs.org/@babel/types/-/types-7.26.9.tgz}
     engines: {node: '>=6.9.0'}
+
+  '@barelyhuman/prettier-config@2.0.2':
+    resolution: {integrity: sha512-ES+UvAEoRgQ/tymiU3Kqd2L1ltnTezLdecFdqdNvleS4Xv/87Rpjp7yO19OabCkLwcu6SCExYv23cQ4R0YBHww==, tarball: https://registry.npmjs.org/@barelyhuman/prettier-config/-/prettier-config-2.0.2.tgz}
+    hasBin: true
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==, tarball: https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.21.5.tgz}
@@ -1168,6 +1184,11 @@ packages:
     resolution: {integrity: sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ==, tarball: https://registry.npmjs.org/http-errors/-/http-errors-2.0.0.tgz}
     engines: {node: '>= 0.8'}
 
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==, tarball: https://registry.npmjs.org/husky/-/husky-9.1.7.tgz}
+    engines: {node: '>=18'}
+    hasBin: true
+
   ignore-by-default@1.0.1:
     resolution: {integrity: sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==, tarball: https://registry.npmjs.org/ignore-by-default/-/ignore-by-default-1.0.1.tgz}
 
@@ -1351,6 +1372,11 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==, tarball: https://registry.npmjs.org/ms/-/ms-2.1.3.tgz}
 
+  nano-staged@0.8.0:
+    resolution: {integrity: sha512-QSEqPGTCJbkHU2yLvfY6huqYPjdBrOaTMKatO1F8nCSrkQGXeKwtCiCnsdxnuMhbg3DTVywKaeWLGCE5oJpq0g==, tarball: https://registry.npmjs.org/nano-staged/-/nano-staged-0.8.0.tgz}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    hasBin: true
+
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==, tarball: https://registry.npmjs.org/nanoid/-/nanoid-3.3.8.tgz}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1437,6 +1463,11 @@ packages:
 
   preact@10.26.3:
     resolution: {integrity: sha512-OJCfNTdttkOTCbTN+gCnXn/woDqz1dIjvP+gdCoYGP2kKuX6w79FAP8qgY/r7jgAunvqHVVmEOKzKOFWzrXZdw==, tarball: https://registry.npmjs.org/preact/-/preact-10.26.3.tgz}
+
+  prettier@3.5.2:
+    resolution: {integrity: sha512-lc6npv5PH7hVqozBR7lkBNOGXV9vMwROAPlumdBkX0wTbbzPu/U1hk5yL8p2pt4Xoc+2mkT8t/sow2YrV/M5qg==, tarball: https://registry.npmjs.org/prettier/-/prettier-3.5.2.tgz}
+    engines: {node: '>=14'}
+    hasBin: true
 
   process-warning@4.0.1:
     resolution: {integrity: sha512-3c2LzQ3rY9d0hc1emcsHhfT9Jwz0cChib/QN89oME2R451w5fy3f0afAhERFZAwrbDU43wk12d0ORBpDVME50Q==, tarball: https://registry.npmjs.org/process-warning/-/process-warning-4.0.1.tgz}
@@ -1881,6 +1912,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@barelyhuman/prettier-config@2.0.2': {}
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -2735,6 +2768,8 @@ snapshots:
       statuses: 2.0.1
       toidentifier: 1.0.1
 
+  husky@9.1.7: {}
+
   ignore-by-default@1.0.1: {}
 
   inherits@2.0.4: {}
@@ -2883,6 +2918,10 @@ snapshots:
 
   ms@2.1.3: {}
 
+  nano-staged@0.8.0:
+    dependencies:
+      picocolors: 1.1.1
+
   nanoid@3.3.8: {}
 
   node-html-parser@6.1.13:
@@ -2974,6 +3013,8 @@ snapshots:
       preact: 10.26.3
 
   preact@10.26.3: {}
+
+  prettier@3.5.2: {}
 
   process-warning@4.0.1: {}
 
