@@ -24,6 +24,11 @@ export const Navbar = () => {
                 </a>
               </li>
               <li>
+                <a className="text-gray-700 hover:text-gray-900" href="/blog">
+                  Blog
+                </a>
+              </li>
+              <li>
                 <a className="text-gray-700 hover:text-gray-900" href="/app">
                   App
                 </a>

@@ -10,6 +10,9 @@ export default defineConfig({
   resolve: {
     dedupe: ['preact'],
   },
+  build: {
+    outDir: '../dist',
+  },
   plugins: [
     Unimport.vite({ imports: [{ name: 'server$', from: '@tanstack/bling' }] }),
     bling(),

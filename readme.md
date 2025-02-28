@@ -2,7 +2,7 @@
 
 - [x] Landing Page
 - [x] Changelog page
-- [ ] Blog
+- [x] Blog
 - [ ] App Section
   - [ ] Authentication
   - [ ] 2FA

@@ -10,6 +10,7 @@
     "preact": "^10.26.3",
     "preact-iso": "^2.9.0",
     "preact-render-to-string": "^6.5.13",
+    "slugify": "^1.6.6",
     "uma": "workspace:*",
     "yaml": "^2.7.0"
   },
@@ -19,8 +20,8 @@
   "scripts": {
     "dev": "node --experimental-strip-types server.ts --dev",
     "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build --outDir dist/client --ssrManifest",
-    "build:server": "vite build --outDir dist/server --ssr /index.js",
+    "build:client": "vite build --outDir ../dist/client --ssrManifest",
+    "build:server": "vite build --outDir ../dist/server --ssr /index.js",
     "start": "node --experimental-strip-types server.ts",
     "prepare": "husky"
   },
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@barelyhuman/prettier-config": "^2.0.2",
     "@preact/preset-vite": "^2.10.1",
+    "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.0.9",
     "husky": "^9.1.7",
     "nano-staged": "^0.8.0",
