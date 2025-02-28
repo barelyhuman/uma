@@ -4,18 +4,18 @@ import {
   LocationProvider,
   Route,
   Router,
-} from "preact-iso";
+} from 'preact-iso'
 
-export function createApp({ routes = [] } = {}) {
+export function createApp({ url = '', routes = [] } = {}) {
   return (
-    <LocationProvider>
+    <LocationProvider url={url}>
       <ErrorBoundary>
         <Router>
-          {routes.map((d) => (
+          {routes.map(d => (
             <Route path={d.path} component={lazy(d.component)} />
           ))}
         </Router>
       </ErrorBoundary>
     </LocationProvider>
-  );
+  )
 }

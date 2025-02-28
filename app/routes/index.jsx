@@ -1,5 +1,5 @@
-import { FeatureCard } from "../components/FeatureCard";
-import { Navbar } from "../components/Navbar";
+import { FeatureCard } from '../components/FeatureCard'
+import { Navbar } from '../components/Navbar'
 
 export default function () {
   return (
@@ -20,5 +20,5 @@ export default function () {
         />
       </section>
     </div>
-  );
+  )
 }

@@ -16,13 +16,16 @@ importers:
         version: 0.6.1
       '@tanstack/bling':
         specifier: ^0.5.0
-        version: 0.5.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+        version: 0.5.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       devalue:
         specifier: ^5.1.1
         version: 5.1.1
       fastify:
         specifier: ^5.2.1
         version: 5.2.1
+      marked:
+        specifier: ^15.0.7
+        version: 15.0.7
       preact:
         specifier: ^10.26.3
         version: 10.26.3
@@ -35,16 +38,19 @@ importers:
       uma:
         specifier: workspace:*
         version: link:packages/uma
+      yaml:
+        specifier: ^2.7.0
+        version: 2.7.0
     devDependencies:
       '@barelyhuman/prettier-config':
         specifier: ^2.0.2
         version: 2.0.2
       '@preact/preset-vite':
         specifier: ^2.10.1
-        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@tailwindcss/vite':
         specifier: ^4.0.9
-        version: 4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+        version: 4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -68,7 +74,7 @@ importers:
         version: 4.1.2
       vite:
         specifier: ^6.2.0
-        version: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
+        version: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
   packages/uma:
     dependencies:
@@ -1350,6 +1356,11 @@ packages:
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==, tarball: https://registry.npmjs.org/magic-string/-/magic-string-0.30.17.tgz}
 
+  marked@15.0.7:
+    resolution: {integrity: sha512-dgLIeKGLx5FwziAnsk4ONoGwHwGPJzselimvlVskE9XLN4Orv9u2VA3GWw/lYUqjfA0rUT/6fqKwfZJapP9BEg==, tarball: https://registry.npmjs.org/marked/-/marked-15.0.7.tgz}
+    engines: {node: '>= 18'}
+    hasBin: true
+
   mime@3.0.0:
     resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==, tarball: https://registry.npmjs.org/mime/-/mime-3.0.0.tgz}
     engines: {node: '>=10.0.0'}
@@ -1768,6 +1779,11 @@ packages:
 
   yallist@3.1.1:
     resolution: {integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==, tarball: https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz}
+
+  yaml@2.7.0:
+    resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==, tarball: https://registry.npmjs.org/yaml/-/yaml-2.7.0.tgz}
+    engines: {node: '>= 14'}
+    hasBin: true
 
 snapshots:
 
@@ -2222,17 +2238,17 @@ snapshots:
 
   '@mjackson/node-fetch-server@0.6.1': {}
 
-  '@preact/preset-vite@2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@preact/preset-vite@2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.9)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.9)
-      '@prefresh/vite': 2.4.7(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+      '@prefresh/vite': 2.4.7(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.9)
       debug: 4.4.0(supports-color@5.5.0)
       kolorist: 1.8.0
-      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
+      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
       vite-prerender-plugin: 0.5.6
     transitivePeerDependencies:
       - preact
@@ -2246,7 +2262,7 @@ snapshots:
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.7(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@prefresh/vite@2.4.7(preact@10.26.3)(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@prefresh/babel-plugin': 0.5.1
@@ -2254,7 +2270,7 @@ snapshots:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.26.3
-      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
+      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -2373,21 +2389,21 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.9
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.9
 
-  '@tailwindcss/vite@4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@tailwindcss/vite@4.0.9(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
       '@tailwindcss/node': 4.0.9
       '@tailwindcss/oxide': 4.0.9
       lightningcss: 1.29.1
       tailwindcss: 4.0.9
-      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
+      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
 
-  '@tanstack/bling@0.5.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@tanstack/bling@0.5.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
       '@babel/generator': 7.26.9
       '@babel/template': 7.26.9
       '@babel/traverse': 7.26.9
       '@babel/types': 7.26.9
-      '@vitejs/plugin-react': 3.1.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))
+      '@vitejs/plugin-react': 3.1.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))
       esbuild: 0.16.17
       esbuild-plugin-replace: 1.4.0
     transitivePeerDependencies:
@@ -2396,14 +2412,14 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@vitejs/plugin-react@3.1.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1))':
+  '@vitejs/plugin-react@3.1.0(vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.9)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.9)
       magic-string: 0.27.0
       react-refresh: 0.14.2
-      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)
+      vite: 6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -2897,6 +2913,8 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  marked@15.0.7: {}
+
   mime@3.0.0: {}
 
   minimatch@10.0.1:
@@ -3226,7 +3244,7 @@ snapshots:
       fsevents: 2.3.3
       lightningcss: 1.29.1
 
-  vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1):
+  vite@6.2.0(jiti@2.4.2)(lightningcss@1.29.1)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.0
       postcss: 8.5.3
@@ -3235,6 +3253,7 @@ snapshots:
       fsevents: 2.3.3
       jiti: 2.4.2
       lightningcss: 1.29.1
+      yaml: 2.7.0
 
   webpack-virtual-modules@0.6.2: {}
 
@@ -3255,3 +3274,5 @@ snapshots:
       strip-ansi: 7.1.0
 
   yallist@3.1.1: {}
+
+  yaml@2.7.0: {}
