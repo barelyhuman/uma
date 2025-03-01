@@ -10,7 +10,6 @@ const fetchBlogPosts = server$(async function () {
   const filePaths = await readdir(rootPath, {
     recursive: true,
   })
-  console.log({ filePaths })
   const blogIndex = await Promise.all(
     filePaths.map(async d => {
       const fileData = await readFile(join(rootPath, d), 'utf8')

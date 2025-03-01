@@ -5,7 +5,6 @@ import { marked } from 'marked'
 import { access, readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { useState } from 'preact/hooks'
-import slugify from 'slugify'
 import yaml from 'yaml'
 import { Navbar } from '../components/Navbar'
 
@@ -33,7 +32,7 @@ const fetchBlogPost = server$(async function (slug) {
 
 export default function BlogPost() {
   const route = useRoute()
-  const slug = route.rest
+  const slug = route.params.slug
   const [post, setPost] = useState()
 
   useEffect(() => {

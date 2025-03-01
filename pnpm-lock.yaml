@@ -73,8 +73,8 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9
       typescript:
-        specifier: 5.8.1-rc
-        version: 5.8.1-rc
+        specifier: 5.8.2
+        version: 5.8.2
       unimport:
         specifier: ^4.1.2
         version: 4.1.2
@@ -1687,8 +1687,8 @@ packages:
     resolution: {integrity: sha512-r0eojU4bI8MnHr8c5bNo7lJDdI2qXlWWJk6a9EAFG7vbhTjElYhBVS3/miuE0uOuoLdb8Mc/rVfsmm6eo5o9GA==, tarball: https://registry.npmjs.org/touch/-/touch-3.1.1.tgz}
     hasBin: true
 
-  typescript@5.8.1-rc:
-    resolution: {integrity: sha512-D8IlSOUk1E08jpFdK81reYkA1a/4XtEdV6MElOGdbu/uOy1RpEDqNO/onWmqUaLkTyeHmmU/QlWvjcM9cqF85g==, tarball: https://registry.npmjs.org/typescript/-/typescript-5.8.1-rc.tgz}
+  typescript@5.8.2:
+    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==, tarball: https://registry.npmjs.org/typescript/-/typescript-5.8.2.tgz}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3245,7 +3245,7 @@ snapshots:
 
   touch@3.1.1: {}
 
-  typescript@5.8.1-rc: {}
+  typescript@5.8.2: {}
 
   ufo@1.5.4: {}
 
